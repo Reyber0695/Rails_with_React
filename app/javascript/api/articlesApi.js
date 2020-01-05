@@ -4,9 +4,7 @@ class ArticlesApi {
       .then(response => {
         return response.json();
       })
-      .catch(error => {
-        return error;
-      });
+
   }
 
   static getArticle(id){

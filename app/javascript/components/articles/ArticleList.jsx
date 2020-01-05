@@ -8,6 +8,9 @@ function ArticleList(props) {
   // componentDidMount() {
   //   this.props.listArticles();
   // }
+  useEffect(() => {
+    props.listArticles();
+  });
 
   return (
     <div>
@@ -22,7 +25,6 @@ function ArticleList(props) {
           );
         })
       }
-      <button onClick={() => this.props.addArticle('Hola', 'Holi')} className="btn btn-outline-primary">Create Article</button>
     </div>
   );
 }
